@@ -1,0 +1,16 @@
+
+@mixin title-big {
+       font-size: $font-size-h1;
+       font-weight:$font-weight;
+}
+
+.font-h1 {
+    @include title-big
+}
+
+@mixin font-family($value) {
+    font-family: $value;
+}
+.font-lucida {
+    @include font-family($font-family)
+}

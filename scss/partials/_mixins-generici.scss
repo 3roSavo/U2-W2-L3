@@ -1,0 +1,18 @@
+
+@mixin display-flex($value) {
+    display : $value;
+}
+.d-flex {
+    @include display-flex($d-flex)
+}
+
+// @mixin flex-column($value) {
+//     flex : $value;
+// }
+// .flex-col {
+//     @include flex-column($flex-column)
+// } 
+
+// @mixin width-logo($value) {
+
+// }

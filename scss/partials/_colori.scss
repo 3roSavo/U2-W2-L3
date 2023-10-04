@@ -1,0 +1,23 @@
+
+@mixin color($value) {
+    color: $value;
+}
+.text-primary {
+    @include color($font-color)
+}
+
+@mixin bg-color-header($value) {
+    background-color: $value;
+}
+
+.bg-color {
+    @include bg-color-header($bg-header)
+}
+
+
+
+@each $button, $valore in $colore-bg-bottoni {
+    .button-#{$button} {
+        background-color: $valore;
+    }
+}
